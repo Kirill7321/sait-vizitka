@@ -24,7 +24,7 @@ padding: 28px 0 27px;
 .nav__item{
 	margin-right: 30px;
 	color: rgb(228, 228, 228);
-font-family: Inter;
+font-family: "Roboto Condensed";
 font-size: 18px;
 font-weight: 400;
 line-height: 21.78px;
@@ -40,9 +40,9 @@ text-align: left;
 align-items: center;
 padding: 103px 0 ;
 }
-.heroblock__title{
+.hero-block__title{
 color: rgb(255, 255, 255);
-font-family: Inter;
+font-family: "Roboto Condensed";
 font-size: 48px;
 font-weight: 400;
 line-height: 58px;
@@ -59,7 +59,7 @@ margin-bottom: 72px;
 }
 .about_title{
 	color: rgb(228, 228, 228);
-font-family: Inter;
+font-family: "Roboto Condensed";
 font-size: 48px;
 font-weight: 400;
 line-height: 58.09px;
@@ -74,7 +74,7 @@ margin-bottom: 87.65px;
 }
 .about_text{
 	color: rgb(228, 228, 228);
-font-family: Inter;
+font-family: "Roboto Condensed";
 font-size: 28px;
 font-weight: 400;
 line-height: 33.89px;
@@ -89,7 +89,7 @@ background: rgb(44, 44, 44);
 }
 .video_title{
 	color: rgb(228, 228, 228);
-font-family: Inter;
+font-family: "Roboto Condensed";
 font-size: 48px;
 font-weight: 400;
 line-height: 58.09px;
@@ -110,7 +110,7 @@ margin-bottom: 81px;
 }
 .galery__title{
 color: rgb(228, 228, 228);
-font-family: Inter;
+font-family: "Roboto Condensed";
 font-size: 48px;
 font-weight: 400;
 line-height: 58.09px;
@@ -143,7 +143,7 @@ margin-bottom: 83px;
 }
 .footer__title{
 	color: rgb(228, 228, 228);
-font-family: Inter;
+font-family: "Roboto Condensed";
 font-size: 30px;
 font-weight: 400;
 line-height: 36.31px;
@@ -152,7 +152,7 @@ text-align: left;
 }
 .footer__text{
 	color: rgb(228, 228, 228);
-font-family: Inter;
+font-family: "Roboto Condensed";
 font-size: 16px;
 font-weight: 400;
 line-height: 19.36px;
@@ -162,4 +162,102 @@ text-align: left;
 .footer__list{
 	list-style: none;
 	display: flex;
+}
+.container_main{
+	min-height: 80vh;
+}
+.nav_link{
+	text-decoration: none;
+	color: rgb(228, 228, 228);
+}
+.burger{
+	width: 80px;
+	height: 50px;
+	background-color: transparent;
+	margin-bottom: none;
+	display: none;
+}
+.burger__line{
+	width: 100%;
+	height: 10px;
+    background: rgb(196, 196, 196);
+    margin-bottom: 10px;
+}
+@media (max-width: 834px){
+	.nav{
+		display: none;
+	}
+	.burger{
+		display: block;
+	}
+	.container{
+		max-width: 580px;
+	}
+	.hero-block__title{
+	text-align: center;
+    }
+    .hero-block__content{
+    	width: 100%;
+    }
+    .hero-block_img{
+    	display: none;
+    }
+    .about_content{
+    	flex-direction: column;
+    	gap: 50px;
+    }
+    .video__video{
+    	height: 350px;
+    	border-width: 40px;
+    }
+    .galery__list{
+    	flex-direction: column;
+    	max-width: 580px;
+    	margin: 0 auto;
+    }
+    .galery__item{
+    	width: 100%;
+    }
+}
+@media (max-width: 390px){
+	.container{
+		max-width: 340px;
+	}
+	.burger{
+		width: 60px;
+	}
+	.hero-block__title{
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+	.about_text{
+		font-size: 22px;
+	}
+	.about_title{
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+	.about_img{
+		width: 100%;
+	}
+	.video_title{
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+	.video__video{
+		height: 157px;
+		border-width: 15px;
+	}
+	.galery__title{
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+	.galery__list{
+        max-width: 340px;
+        margin: 0 auto;
+	}
+	.container_footer{
+		flex-direction: column;
+		gap: 20px;
+	}
 }
